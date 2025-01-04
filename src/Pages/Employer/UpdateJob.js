@@ -13,7 +13,7 @@ export const UpdateJob = () => {
     const initialValue = []
 
     useEffect(() => {
-        fetch(`http://localhost:8080/jobs/current-job/${id}`)
+        fetch(`https://job-portal-7tgeem47h-mohameds-projects-59570ee8.vercel.app/jobs/current-job/${id}`)
             .then((res) => res.json())
             .then((result) => {
                 setJob(result);
@@ -42,7 +42,7 @@ export const UpdateJob = () => {
     })
 
     useEffect(()=> {
-        fetch(`http://localhost:8080/jobs/current-job/${id}`)
+        fetch(`https://job-portal-7tgeem47h-mohameds-projects-59570ee8.vercel.app/jobs/current-job/${id}`)
             .then((res) => res.json())
             .then((result) => {
                 setJob(result);
@@ -56,7 +56,7 @@ export const UpdateJob = () => {
         console.log(data)
         
         // send data to backend API
-        fetch(https://job-portal-7tgeem47h-mohameds-projects-59570ee8.vercel.app//jobs/post-job", {
+        fetch("https://job-portal-7tgeem47h-mohameds-projects-59570ee8.vercel.app/jobs/post-job", {
             method: "POST",
             headers: {'content-type' : 'application/json'},
             body: JSON.stringify(data)

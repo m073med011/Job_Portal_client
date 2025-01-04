@@ -156,7 +156,7 @@ export const CandidateProfile = () => {
         }
         // console.log(newData);
 
-        fetch(https://job-portal-7tgeem47h-mohameds-projects-59570ee8.vercel.app//application/post-application", {
+        fetch("https://job-portal-7tgeem47h-mohameds-projects-59570ee8.vercel.app/application/post-application", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(newData),

@@ -28,7 +28,7 @@ export const PostJob = () => {
     const onSubmit = (data) =>{ 
         console.log(data)
         // send data to backend API
-        fetch(https://job-portal-7tgeem47h-mohameds-projects-59570ee8.vercel.app//jobs/post-job", {
+        fetch("https://job-portal-7tgeem47h-mohameds-projects-59570ee8.vercel.app/jobs/post-job", {
             method: "POST",
             headers: {'content-type' : 'application/json'},
             body: JSON.stringify(data)
